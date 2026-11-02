@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="BeLmakina Backups is an internal backup utility for the BeLmakina POS system.">
+  <title>BeLmakina Backups | About</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#243a30;background:#f4f1ea}*{box-sizing:border-box}body{margin:0;line-height:1.65}header{padding:20px max(24px,calc((100vw - 900px)/2));border-bottom:1px solid #dddcd1;background:#faf8f2}header a{color:#165c39;text-decoration:none;font-weight:750;font-size:17px}.wrap{max-width:900px;padding:64px 24px 80px;margin:auto}h1{font-size:clamp(36px,5vw,54px);line-height:1.1;letter-spacing:-.035em;margin:0 0 20px}h2{font-size:23px;margin:36px 0 12px}p{font-size:17px;max-width:680px;color:#43564b}.eyebrow{color:#167345;text-transform:uppercase;font-weight:800;letter-spacing:.12em;font-size:13px;margin-bottom:16px}.card{border:1px solid #dce4dc;background:#fff;border-radius:18px;padding:28px;margin:30px 0}.card p{margin:0}a{color:#126443}footer{padding:24px max(24px,calc((100vw - 900px)/2));border-top:1px solid #dddcd1;font-size:14px;color:#6a776d}footer a{margin-left:18px}strong{color:#233b2c}
+  </style>
+</head>
+<body>
+<header><a href="/">BeLmakina Backups</a></header>
+<main class="wrap">
+  <div class="eyebrow">Internal operational utility</div>
+  <h1>Secure backup storage for BeLmakina POS</h1>
+  <p>BeLmakina Backups is an internal tool used by the BeLmakina shop operator to preserve recoverable copies of the BeLmakina point-of-sale (POS) system's database and product-image storage.</p>
+  <div class="card"><p><strong>What the application does:</strong> The tool prepares database and storage backup archives, encrypts backup content, and uploads backup files to a dedicated folder in the operator's Google Drive account. It helps the operator recover business records after an incident.</p></div>
+  <h2>Why Google Drive access is requested</h2>
+  <p>The application uses the Google Drive API with the limited <code>drive.file</code> permission to create and manage backup files and folders that the application itself creates. It does not request general access to unrelated personal Drive files.</p>
+  <h2>Who uses it?</h2>
+  <p>This is a private, operator-managed backup workflow for a single shop. These pages are informational only; they do not expose POS data, backup files, login details, or administrative tools.</p>
+  <h2>Data practices</h2>
+  <p>Read our <a href="/privacy.html">Privacy Policy</a> to learn how Google Drive authorization, stored backups, and access permissions are handled.</p>
+</main>
+<footer>© 2026 BeLmakina Backups <a href="/privacy.html">Privacy Policy</a></footer>
+</body>
+</html>

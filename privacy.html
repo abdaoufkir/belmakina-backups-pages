@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy Policy for BeLmakina Backups, a private Google Drive backup tool for BeLmakina POS.">
+  <title>Privacy Policy | BeLmakina Backups</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#243a30;background:#f4f1ea}*{box-sizing:border-box}body{margin:0;line-height:1.7}header{padding:20px max(24px,calc((100vw - 900px)/2));border-bottom:1px solid #dddcd1;background:#faf8f2}header a{color:#165c39;text-decoration:none;font-weight:750;font-size:17px}.wrap{max-width:900px;padding:56px 24px 80px;margin:auto}h1{font-size:clamp(32px,5vw,48px);line-height:1.1;letter-spacing:-.03em;margin:0 0 16px}h2{font-size:21px;margin:36px 0 10px}p,li{font-size:16px;color:#43564b;max-width:730px}.eyebrow{color:#167345;font-weight:750;font-size:13px;margin-bottom:16px}a{color:#126443}footer{padding:24px max(24px,calc((100vw - 900px)/2));border-top:1px solid #dddcd1;font-size:14px;color:#6a776d}footer a{margin-left:18px}.notice{padding:16px 20px;background:#fff6da;border:1px solid #dac58b;border-radius:12px}code{white-space:normal;overflow-wrap:anywhere}
+  </style>
+</head>
+<body>
+<header><a href="/">BeLmakina Backups</a></header>
+<main class="wrap">
+  <div class="eyebrow">Effective date: November 2, 2026</div>
+  <h1>Privacy Policy</h1>
+  <p>This policy describes how <strong>BeLmakina Backups</strong>, an internal backup utility for the BeLmakina POS system, uses authorization to the operator's Google Drive account.</p>
+  <h2>Purpose and information processed</h2>
+  <p>The application creates and manages recovery copies of the POS database and product-image storage. The application may process the Google Drive account authorization needed to create files, Google Drive file IDs and associated metadata, and the backup files it uploads. Backup content may contain internal business records and product-image data from the POS system.</p>
+  <h2>Google Drive permissions</h2>
+  <p>The application requests <code>https://www.googleapis.com/auth/drive.file</code>, which permits it to access and manage the specific Drive files and folders created or opened with this application. It does not request the broader permission to access the entire Google Drive account.</p>
+  <h2>How information is used and stored</h2>
+  <p>Information is used solely to prepare, transmit, store, validate, and, when required, recover operational backup files. Backup payloads are encrypted before upload. Some archive names and container metadata may remain visible as metadata in Google Drive.</p>
+  <p>Authorization tokens may be stored in the operator's local rclone configuration and, once automation is enabled, in a protected GitHub Actions secret used by the backup workflow. Backup files are stored in the operator's Google Drive account. Google and GitHub provide the relevant hosting and automation infrastructure.</p>
+  <h2>Sharing and selling data</h2>
+  <p>The application does not sell Google user data, use it for advertising, or intentionally share backup content with unrelated third parties. Data is processed by the services necessary to run the workflow, including Google Drive and GitHub Actions.</p>
+  <h2>Retention, deletion and access withdrawal</h2>
+  <p>Backup files remain in the operator's Google Drive until the operator deletes them or applies a retention policy. The operator can delete the backup files and revoke the application's access from their Google Account security settings. Revoking access stops future authorized access but does not automatically delete backup files already stored in Drive.</p>
+  <h2>Security</h2>
+  <p>Backups are prepared for encrypted storage and access is limited using Google OAuth's <code>drive.file</code> scope. The operator is responsible for protecting the encryption recovery key, OAuth credentials, and access to the Drive and GitHub accounts.</p>
+  <h2>Contact</h2>
+  <p>For privacy or access questions, contact the operator using the support email listed on the BeLmakina Backups Google OAuth consent screen.</p>
+  <p><a href="/">Return to BeLmakina Backups homepage</a></p>
+</main>
+<footer>© 2026 BeLmakina Backups <a href="/">Homepage</a></footer>
+</body>
+</html>
